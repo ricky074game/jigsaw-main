@@ -116,7 +116,7 @@ async fn main() {
 
         let uri = Uri::try_from(&format!("https://{}", config.domain_name)).unwrap();
         let redirect_route = warp::any().map(move || warp::redirect(uri.clone()));
-        let redirect = warp::serve(redirect_route).run(([127, 0, 0, 1], 80));
+        let redirect = warp::serve(redirect_route).run(([127, 0, 0, 1], 2048));
 
         Box::pin(join(tls, redirect).map(|_| ()))
     };

@@ -6,4 +6,4 @@ cmds = ["cargo build --release"]
 dependsOn = ['setup']
 
 [start]
-cmd = "./target/release/server"
+cmd = "sudo ./target/release/server"
