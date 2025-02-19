@@ -2,7 +2,7 @@
 # shellcheck disable=SC2164
 cd "${0%/*}"
 echo "Building release..."
-sudo apt-get update && sudo apt-get install -y libudev-dev
+apt-get update && apt-get install -y libudev-dev
 
 cargo install trunk
 trunk build --release
