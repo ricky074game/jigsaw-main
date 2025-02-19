@@ -1,4 +1,4 @@
-domain_name = "friendlyjigsaw.com" # server domain name (used for http -> https redirect)
+domain_name = "https://ricky074game.github.io/jigsaw-main/" # server domain name (used for http -> https redirect)
 port = 8080 # server port
 
 client_timeout = 600 # seconds before inactive clients are kicked
@@ -17,5 +17,5 @@ complete_wait_time = 10 # time to wait after a puzzle is complete before shuttin
 
 queue_file = "queue.txt" # image queue file
 
-tls_cert = "example/cert.pem"
-tls_key = "example/key.rsa"
+tls_cert = "cert.pem"
+tls_key = "key.rsa"
