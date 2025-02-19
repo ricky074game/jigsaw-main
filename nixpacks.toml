@@ -1,0 +1,11 @@
+[phases.setup]
+apt_pkgs = ["pkg-config", "libasound2-dev"]
+
+[phases.build]
+build_cmd = "cargo build --release"
+
+[phases.start]
+start_cmd = "./target/release/app"
+
+[environment]
+PKG_CONFIG_PATH = "/usr/lib/x86_64-linux-gnu/pkgconfig"
