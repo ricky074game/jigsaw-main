@@ -1,0 +1,9 @@
+[phases.setup]
+aptPkgs = ["pkg-config", "libasound2-dev"]
+
+[phases.build]
+cmds = ["cargo build --release"]
+dependsOn = ['setup']
+
+[start]
+cmd = "./target/release/app"
