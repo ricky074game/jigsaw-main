@@ -1,5 +1,5 @@
 [phases.setup]
-aptPkgs = ["pkg-config", "libasound2-dev"]
+aptPkgs = ["pkg-config", "libasound2-dev", "libudev-dev"]
 
 [phases.build]
 cmds = ["cargo build --release"]
